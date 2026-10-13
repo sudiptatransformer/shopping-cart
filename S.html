@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKArt</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Audiowide&family=BBH+Hegarty&family=Bangers&family=Berkshire+Swash&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Calligraffitti&family=Caveat+Brush&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Edu+SA+Beginner:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Fuzzy+Bubbles:wght@400;700&family=Geom:ital,wght@0,300..900;1,300..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Handlee&family=Indie+Flower&family=Kalnia:wght@100..700&family=Kaushan+Script&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Marcellus+SC&family=Metal+Mania&family=Michroma&family=Miltonian&family=Nothing+You+Could+Do&family=Oleo+Script:wght@400;700&family=Oooh+Baby&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Original+Surfer&family=Oswald:wght@200..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Play:wght@400;700&family=Playwrite+NO:wght@100..400&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Righteous&family=Viga&family=WDXL+Lubrifont+TC&family=Yuyu&display=swap');
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            padding:  15 20px;
+           
+        }
+        .head1{
+            height: 60px;
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            text-align: center;
+            padding-top: 20px;
+            background-color: whitesmoke;
+       box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+        .text1{
+            letter-spacing: 8px;
+            font-size: 25px;
+           font-family: "Bangers", system-ui;
+        }
+        .ul1{
+             gap: 15px;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            
+        }
+        .ul1 a{
+            text-decoration: none;
+        }
+        .con{
+            height: 80vh;
+            width: 100%;
+        }
+        .foot{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .btn{
+            text-align: center;
+            background-color:#d881b8 ;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .a1{
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+             font-family: "Merienda", cursive;
+        }
+        .text{
+            color:red;
+           padding-top: 20px;
+           font-size: 23px;
+            font-family: "Big Shoulders Stencil", sans-serif;
+        }
+       .ul a {
+    text-decoration: none;
+}
+
+.con {
+    height: 80vh;
+    width: 100%;
+}
+
+
+.text3 {
+    text-align: center;
+    color: rgb(0, 225, 255);
+    padding-top: 20px;
+    font-size: 23px;
+    font-family: "Big Shoulders Stencil", sans-serif;
+}
+
+.text2 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    letter-spacing: 8px;
+    font-family: "Metal Mania", system-ui;
+    color: rgb(8, 37, 127);
+}
+
+.con {
+    overflow: scroll;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+h3{
+    padding-top: 10px;
+    padding-left: 3px;
+    color: rgb(119, 119, 4);
+    font-family: "Cinzel", serif; 
+}
+.taglist{
+    display: flex;
+   
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+.shirts{
+    height: 170px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.shirts:hover{
+    transform: scale(1.08);
+}
+.tagtext1{
+    font-weight: bold;
+     font-family: "Crimson Text", serif;
+}
+.tagtext2{
+    color: green;
+}
+.tagtext3{
+    font-weight: bold;
+         font-family: "Crimson Text", serif;
+}
+.box1 {
+    padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+
+}
+
+.box2 {
+    padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+
+.box3 {
+   padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+
+.box4 {
+   padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+.box5 {
+   padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+
+.box6 {
+   padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+
+.box7 {
+    padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+.box8 {
+padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+.box9 {
+padding: 12px;
+    width: 40vh;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    overflow: hidden;
+}
+
+
+.shirts {
+    height: 170px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <header class="head1">
+            <div class="text1">
+                SHOPING KARO
+            </div>
+            <ul class="ul1">
+                <li><a href="">SHIRTS</a></li>
+                <li><a href="">JEANS</a></li>
+                <li><a href="">KURTI'S</a></li>
+                <li><a href="">SHOES</a></li>
+            </ul>
+        </header>
+        <div class="con">
+           <div class="text2">SALE IN LIVE</div>
+             <div class="box">
+
+                <div class="box1">
+                    <div class="img">
+                        <img src="https://rukminim3.flixcart.com/image/480/640/xif0q/shirt/r/s/x/l-grocy-pink-10-vg-brother-original-imahprnyj2gxpsye.jpeg?q=20" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">VG BROTHER MEN</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹399</div>
+                        <div class="tagtext2">40% off</div>
+                         <div class="tagtext3">4.2⭐</div>
+               </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+
+                <div class="box2">
+                    <div class="img">
+                        <img src="https://houseofkari.in/cdn/shop/files/Screenshot2023-09-21at12.12.17PM.png?v=1756989798&width=2048" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Kurti</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹349</div>
+                        <div class="tagtext2">40% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+
+                <div class="box3">
+                    <div class="img">
+                        <img src="https://images.meesho.com/images/products/908899326/txesl_512.webp?width=512" alt="" class="shirts" />
+                    </div>
+                     <h3 class="tag">Baggy Jeans</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹999</div>
+                        <div class="tagtext2">20% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+
+                <div class="box4">
+                    <div class="img">
+                        <img src="https://assets.myntassets.com/w_200,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2026/AUGUST/20/e43c94e1b447466cb07053d5f5760f84.jpg" alt="" class="shirts" />
+                    </div>
+                     <h3 class="tag">Sunglass</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹299</div>
+                        <div class="tagtext2">40% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                    
+                </div>
+
+                <div class="box5">
+                    <div class="img">
+                         <img src="https://images-static.nykaa.com/media/catalog/product/tr:h-800,w-800,cm-pad_resize/f/2/f2f9bfeWTJN1095M_1.jpg" alt="" class="shirts" />
+                    </div>
+                   <h3 class="tag">Cargo Men</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹999</div>
+                        <div class="tagtext2">40% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+
+                <div class="box6">
+                    <div class="img">
+                        <img src="https://images.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw2066b4f4/images/aw26/indieblock33626aw26blu_1.jpg?sw=650&sh=975&q=100&strip=false" alt="" class="shirts" />
+                    </div>
+                   <h3 class="tag">Dress</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹599</div>
+                        <div class="tagtext2">40% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+
+                <div class="box7">
+                    <div class="img">
+                        <img src="https://assets.myntassets.com/w_412,q_50,,dpr_3,fl_progressive,f_webp/assets/images/2025/NOVEMBER/21/1QrD7aun_82807a3d6dc640f0a6f5fe44031317eb.jpg" alt="" class="shirts" />
+                    </div>
+                     <h3 class="tag">Sneakers</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹1299</div>
+                        <div class="tagtext2">40% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+
+                <div class="box8">
+                    <div class="img">
+                        <img src="https://img.tatacliq.com/images/i8/252Wx374H/MP000000012957457_252Wx374H_202204281411401.jpeg" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Kito</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹899</div>
+                        <div class="tagtext2">40% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                           <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim3.flixcart.com/image/918/918/xif0q/television/z/2/b/-resized-original-imahqekggqqxgbcz.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">80 cm (32 inch) HD Ready LED Smart Tizen TV 2026 Edition </h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹14000</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+            <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim3.flixcart.com/image/918/918/xif0q/computer/q/l/r/-original-imahzxav2db4grdz.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Apple MacBook Air (M5, 2026) M5 - (16 GB/512 GB SSD/Tahoe) MDHA4HN/A (13.6 inch, Starlight, 1.24 kg)</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹1,39,990</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>'
+                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/jean/p/v/a/28-dl-white-loose-w-denim-life-original-imahkvmfjabjjfzu.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Denim Life Men Loose Fit Mid Rise White Jeans</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹390</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/mobile/z/h/l/-original-imahqvadwhgxgx2n.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Apple iPhone 15 (Blue, 128 GB)</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹67,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shirt/v/u/l/m-cobrown03-tirmizi-original-imahq5phdrhkpzzd.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Tirmizi Men Regular Fit Solid Spread Collar Formal Shirt</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹1,299</div>
+                        <div class="tagtext2">70% off</div>
+                        <div class="tagtext3">4.5⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/shirt/b/r/h/m-pathan-check-shirtzone-original-imahpjwzqkvjmvft.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">SHIRTZONE Men Slim Fit Checkered Spread Collar Formal Shirt</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹1,299</div>
+                        <div class="tagtext2">70% off</div>
+                        <div class="tagtext3">4.5⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="	https://rukminim1.flixcart.com/image/1536/1536/xif0q/shoe/x/l/1/-original-imahzzh2nrgghvpv.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">NIKE JORDAN TRUNNER FLOW Sneakers For Men (White , 6)</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹7,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.8⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="	https://rukminim1.flixcart.com/image/1536/1536/xif0q/shoe/i/y/f/-watermarked-original-imahmd3nw8f7fgze.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">CAMPUS </h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹1699</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/speaker/f/o/5/-original-imahgnrghhuybyzz.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">boAt Aavante Bar 3500 with Bass & Treble Controls, EQ Modes & Master Remote Control 500 W</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹14,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/speaker/7/r/4/-original-imahf84vmtuefmpa.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">GOVO GOSURROUND 950 500 W Bluetooth Soundbar</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹6,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/minutes_enrichment_original/-enriched-original-SMWGEH7VGYMGCP3V_0.jpg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Noise Colorfit Icon 2 1.8'' Display with Bluetooth Calling, AI </h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹7,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/smartwatch/u/2/u/-original-imahpjvnfv25g3xj.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Samsung Galaxy Watch Ultra2 (47mm, LTE) </h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹64,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=700&q=80" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Classic Sunglasses</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/headphone/n/9/u/-original-imahq4g69wgqjh8z.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">SONY WH-1000XM6 Wireless Noise Cancellation</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹35,999</div>
+                        <div class="tagtext2">35% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/backpack/t/3/l/-original-imah3bk3k7gcvygz.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">SKYBAGS Large 40 L Laptop Backpack Vesper 40L Laptop Backpack</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹3,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/keyboard/e/u/b/-original-imahrw49hcfhzysy.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Kreo Swarm Wireless Mechanical Gaming Keyboard</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹5,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/mouse/7/s/t/gm320-ergonomic-design-with-braided-cable-8-programmable-buttons-original-imah2z2zckyryw5m.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Ant Esports GM320 Wired Ergonomic Optical  Gaming Mouse </h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹899</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/fan/f/c/o/-resized-original-imahp6d6gfvuqg2z.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Atomberg Aris Contour Smart|Voice Control|Best Air Flow|Silent|Award Winning </h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹6,999</div>
+                        <div class="tagtext2">5% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim1.flixcart.com/image/1536/1536/xif0q/cooling-pad/t/r/g/nc6500d-support-upto-17-inch-laptops-detachable-mobile-holder-original-imahmspsycwgna3j.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">ZEBRONICS NC6500D support upto 17 inch Laptops, Detachable Mobile Holder, </h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹1,999</div>
+                        <div class="tagtext2">10% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/jean/3/g/g/32-mens-jeans-for-mens-wayking-original-imahhv96yxvtm87e.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">WAYKING Men Loose Fit Mid Rise Beige Jeans</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹699</div>
+                        <div class="tagtext2">5% off</div>
+                        <div class="tagtext3">4.0⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/headphone/p/p/i/mgyh3hn-a-apple-enriched-transparent-original-imafy8wbdnh4kbkd.png?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Apple New AirPods Max Bluetooth Headset (Space Grey, On the Ear)</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹14,999</div>
+                        <div class="tagtext2">13% off</div>
+                        <div class="tagtext3">4.7⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/motorcycle/e/7/c/-original-imahdx2ytw9xv7ht.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">ROYAL ENFIELD Classic 350 Booking</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹2,00,999</div>
+                        <div class="tagtext2">15% off</div>
+                        <div class="tagtext3">4.5⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/cycle/l/k/s/rampage-n-ibc-f-shox-s-fat-bike-d-brake-85-assembled-for-5-8-resized-original-imah93f9mephw39m.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Men BYCycle</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹8,999</div>
+                        <div class="tagtext2">3% off</div>
+                        <div class="tagtext3">4.2⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+                                <div class="box9">
+                    <div class="img">
+                        <img src="https://rukminim2.flixcart.com/image/1536/1536/xif0q/treadmill/x/h/n/tdm-96b-4hp-motor-110kg-led-display-heart-rate-sense-for-home-4-original-imahmjzdumrerxgh.jpeg?q=90" alt="" class="shirts" />
+                    </div>
+                    <h3 class="tag">Powermax Fitness TDM-96B 4HP Motor 110kg</h3>
+                    <div class="taglist">
+                        <div class="tagtext1">₹17,999</div>
+                        <div class="tagtext2">12% off</div>
+                        <div class="tagtext3">4.3⭐</div>
+                    </div>
+                    <div class="btn"><a href="#" class="a1">Add To Cart</a></div>
+                </div>
+           
+
+
+            </div>
+        </div>
+
+        </div>
+        <footer class="foot">
+            <div class="text">
+               @ Developed by SUDIPTA MANDAL
+            </div>
+        </footer>
+        
+</body>
+</html>
